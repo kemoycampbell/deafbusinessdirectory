@@ -1,47 +1,68 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends "base.php" %}
+{% block title %}Deaf Business Directory- Home{% endblock %}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+{% block content %}
 
-    <title>DRY Framework</title>
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">DRY</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+
+<div class="container">
+    <div class="row">
+        <div class="span3"></div>
+        <div class="span3"><h1 class="center-block text-center">Discover the Best Deaf Business</h1></div>
+        <div class="span3"><h4 class="text-center" style="color:white">Deaf Business Directory helps you find all top deaf businesses</h4></div>
+        <div class="span3"></div>
     </div>
-</nav>
-<h3 class="text-center">What is DRY?</h3>
-<section class="col-md-12 text-center">
-    {% if isGranted('anonymous',"kemoy") %}
-        kemoy you are anonymous
-    {% endif %}
-    <p>DRY (Dont Repeat Yourself) is a powerful skeleton web framework that was built using symfony components and Twig for the template engines.
-    The possibilities of what you can do with DRY is unlimited. DRY is capable of building both simple and complex websites
-        or web app. DRY follows the separate of concern principle of building a software. It is laid out in a way that will
-        enable you to build and deploy your app in no time. DRY also made it possible to deploy the app with little to no
-        additional configuration that of that in the development environment. Lastly but not the least, DRY is built using
-        symfony 4 and twig engine 2.0
-    </p>
-</section>
 
-<h3 class="text-center">DRY Project Agriculture Structure</h3>
-<section class="text-center">
-    <img src="{{asset('images/tron3.jpg')}}"/>
-</section>
-<br/>
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-primary" id="google-search">Search</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row">
+        <div class="col-lg-3 col-md-4">
+            <div class="eff-item">
+                <i class="fa fa-search text-success fa-3x"></i>
+            </div>
+            <div class="eff-tt">
+                <strong>Search</strong>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <div class="eff-item">
+                <i class="fa fa-bookmark-o text-danger fa-3x"></i>
+            </div>
+            <div class="eff-tt">
+                <strong>Bookmark</strong>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <div class="eff-item">
+                <i class="fa fa-phone text-info fa-3x"></i>
+            </div>
+            <div class="eff-tt">
+                <strong>Contact</strong>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <div class="eff-item">
+                <i class="fa fa-star-o text-warning fa-3x"></i>
+            </div>
+            <div class="eff-tt">
+                <strong>Bookmark</strong>
+            </div>
+        </div>
+    </div>
+    <!--<div class="btn-group-wrap">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary" id="google-search">Search</button>
+        </div>
+    </div>-->
+</div>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-</body>
-</html>
+{% endblock %}
