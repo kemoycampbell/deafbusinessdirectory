@@ -1,8 +1,8 @@
-#Deaf Business Directory
+# Deaf Business Directory
 Deaf business Directory is a open source directory that contain the directory of Businesses that are both
 Deaf owned or for Deaf individuals. This may also include businesses that are deaf friendly (optional)
 
-#Features
+# Features
 <li> Explore </li>
 <li> Search for a company</li>
 <li> Bookmark / save company contact in personal contact book</li>
