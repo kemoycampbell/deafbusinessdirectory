@@ -125,7 +125,7 @@ class ControlAccess implements ControlAccessInterface
 
                 //otherwise throw exception
 
-                throw new AccountVerificationPendingException("Account pending verification");
+                throw new AccountVerificationPendingException("AccountModel pending verification");
 
             }
         }

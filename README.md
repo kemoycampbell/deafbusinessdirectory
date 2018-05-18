@@ -1,3 +1,36 @@
+#Deaf Business Directory
+Deaf business Directory is a open source directory that contain the directory of Businesses that are both
+Deaf owned or for Deaf individuals. This may also include businesses that are deaf friendly (optional)
+
+#Features
+<li> Explore </li>
+<li> Search for a company</li>
+<li> Bookmark / save company contact in personal contact book</li>
+<li> Add a business </li>
+<li> Review a company </li>
+<li> User's Dashboard </li>
+<ul>
+    <li> My Reviews</li>
+    <li> Reveived Reviews</li>
+    <li> My Bookmarks </li>
+    <li> My Profile</li>
+    <li> My Listings</li>
+</ul>
+
+# Developers section
+Deaf Business directory is developed use DRY framework. Read below DRY Framework
+section for a brief introduction to the framework.
+
+## Environment and set up
+1. Each developers will have a copy of the source codes on their localhost machine. For this
+reason, it is recommend that you are familar with LAMP stack set up. You can use XAMPP, MAMP
+or other
+2. You need to know PHP, CSS, HTML5, understand OOP especially MVC design patterns
+3. cd into your htdoc or public folder and git clone https://github.com/kemoycampbell/deafbusinessdirectory
+4. To view in your browser, make sure your server is running and go to localhost/deafbusinessdirectory
+5. Add your codes or changes
+6. submit a pull request
+
 # Dry Framework
 
 ## What is DRY(Dont Repeat Yourself)
@@ -38,29 +71,7 @@ function works. For example Response, HttpKernel, Requests, etc
 Our framework was built using therefore to get the basic idea read this doc https://symfony.com/doc/current/create_framework/index.html
 
 
-## Setup
-1. clone the repo into your htdoc or www folder
-2. navigate to config/config.php and set up your environment accordily
-3. If you need to use User feature or the isGranted method, you need to ensure
-   you have already uploaded the account.sql to your database. Ensure to correct the 
-   database name in config/config.php
-  
-4. To see a sample of DRY homepage navigate to yoururl/index
-5. Happy coding
-
-
 ## Contribution
 contributions are welcome so feel free to submit a pull request. I will merge the change it if fits
 DRY's vision and there are no conflict with the existence code bases.
 
-
-## Current TODO:
-1. Add onKernelException to the core so we can remove the execption checker out of public/index.php.
-see https://symfony.com/doc/current/components/event_dispatcher.html and http://symfony.com/doc/current/event_dispatcher.html
-for detail on how to implement as well as background information
-
-2. Intensive security testings 
-
-3. Document
-
-4. Open Source

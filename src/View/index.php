@@ -54,10 +54,12 @@
                 <i class="fa fa-star-o text-warning fa-3x"></i>
             </div>
             <div class="eff-tt">
-                <strong>Bookmark</strong>
+                <strong>Review</strong>
             </div>
         </div>
     </div>
+
+
     <!--<div class="btn-group-wrap">
         <div class="btn-group">
             <button type="button" class="btn btn-primary" id="google-search">Search</button>
