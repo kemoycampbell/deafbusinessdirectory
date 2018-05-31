@@ -9,6 +9,7 @@
 
 use Symfony\Component\Routing\Route;
 
+
 //$config is declared inside the public
 $routes = new \Dry\Core\RouteCollectionOverride\RouteCollectionOverride(\Dry\Core\Config\Config::config());
 
@@ -17,6 +18,11 @@ $routes = new \Dry\Core\RouteCollectionOverride\RouteCollectionOverride(\Dry\Cor
 ############################################
 $routes->add('index',new Route('/index',array(
     '_controller'=>'Dry\Controller\Home\HomeController::indexAction')));
+
+$routes->add('register',new Route('/register',array(
+    '_controller'=>'Dry\Controller\Register\RegisterController::indexAction')));
+
+
 
 $routes->add('404',new Route('/404',array(
     '_controller'=>'Dry\Controller\Error\TronError::error404')));
